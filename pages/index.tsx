@@ -69,7 +69,7 @@ export default function Example() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-base font-semibold text-blue-700 tracking-wide uppercase">Hi, my name is</h2>
             <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
-              Rajko Podinic.
+              Rajko Podinic
             </p>
             <p className="mt-3 text-xl text-gray-500 sm:mt-4">
               I’m a MarTech & Analytics Tech Lead at Westpac Group.
