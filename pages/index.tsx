@@ -1,82 +1,166 @@
 import Head from 'next/head'
+import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, ScaleIcon, CheckCircleIcon } from '@heroicons/react/outline'
 
-export default function Home() {
+const features = [
+  {
+    title: 'MarTech & Analytics Tech Lead',
+    company: 'Westpac Group',
+    dates: 'NOV 2021 - PRESENT',
+    icon: CheckCircleIcon,
+  },
+  {
+    title: 'Founder',
+    company: 'DigitalPod Australia',
+    dates: 'DEC 2020 - PRESENT',
+    icon: CheckCircleIcon,
+  }
+]
+const features2 = [
+  {
+    title: 'Solutions Consultant',
+    company: 'Venntifact',
+    dates: 'OCT 2021 - NOV 2021',
+    icon: CheckCircleIcon,
+  },
+  {
+    title: 'Associate Consultant',
+    company: 'Venntifact',
+    dates: 'AUG 2020 - OCT 2021',
+    icon: CheckCircleIcon,
+  },
+  {
+    title: 'Front End Developer',
+    company: 'ZOZO Marketing',
+    dates: 'JUN 2019 - AUG 2020',
+    icon: CheckCircleIcon,
+  },
+  {
+    title: 'WordPress Developer',
+    company: 'ZOZO Marketing',
+    dates: 'JUN 2017 - JUN 2019',
+    icon: CheckCircleIcon,
+  },
+  {
+    title: 'Marketing Intern',
+    company: 'ZOZO Marketing',
+    dates: 'JAN 2016 - JUN 2017',
+    icon: CheckCircleIcon,
+  },
+  {
+    title: 'IT Support',
+    company: 'ITV STUDIOS AUSTRALIA',
+    dates: 'JAN 2020 - AUG 2020',
+    icon: CheckCircleIcon,
+  },
+  {
+    title: 'IT Assistant',
+    company: 'ITV STUDIOS AUSTRALIA',
+    dates: 'JAN 2018 - JAN 2020',
+    icon: CheckCircleIcon,
+  }
+]
+
+/* This example requires Tailwind CSS v2.0+ */
+export default function Example() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
+    <>
+      <div className="bg-gray-50 pt-12 sm:pt-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-base font-semibold text-blue-700 tracking-wide uppercase">Hi, my name is</h2>
+            <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
+              Rajko Podinic.
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
+            <p className="mt-3 text-xl text-gray-500 sm:mt-4">
+              I’m a MarTech & Analytics Tech Lead at Westpac Group.
             </p>
-          </a>
+          </div>
+        </div>
+        <div className="mt-10 pb-12 bg-white sm:pb-16">
+          <div className="relative">
+            <div className="absolute inset-0 h-1/2 bg-gray-50" />
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="max-w-4xl mx-auto">
+                <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
+                  <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
+                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Experience</dt>
+                    <dd className="order-1 text-5xl font-extrabold text-blue-600">10Y</dd>
+                  </div>
+                  <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
+                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Fanatic</dt>
+                    <dd className="order-1 text-5xl font-extrabold text-blue-600">JS</dd>
+                  </div>
+                  <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
+                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Class of 2019</dt>
+                    <dd className="order-1 text-5xl font-extrabold text-blue-600">UTS</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
+      <div className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:text-center">
+            <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Where I've Worked</h2>
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              My Experience
             </p>
-          </a>
+            <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+              Over the last 10+ years, my career has spanned many different companies from family businesses to one of the "big four" banks in Australia & starting a boutique digital agency.
+            </p>
+          </div>
 
+          <div className="mt-10">
+            <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+              {features.map((feature) => (
+                <div key={feature.title} className="relative">
+                  <dt>
+                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-400 text-white">
+                      <feature.icon className="h-6 w-6" aria-hidden="true" />
+                    </div>
+                    <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{feature.title}</p>
+                  </dt>
+                  <dd className="mt-2 ml-16 text-base text-gray-500">{feature.dates}</dd>
+                  <dd className="mt-2 ml-16 text-base text-gray-500">{feature.company}</dd>
+                </div>
+              ))}
+              {features2.map((feature) => (
+                <div key={feature.title} className="relative">
+                  <dt>
+                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-gray-200 text-white">
+                      <feature.icon className="h-6 w-6" aria-hidden="true" />
+                    </div>
+                    <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{feature.title}</p>
+                  </dt>
+                  <dd className="mt-2 ml-16 text-base text-gray-500">{feature.dates}</dd>
+                  <dd className="mt-2 ml-16 text-base text-gray-500">{feature.company}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-blue-700 max-w-7xl mx-auto rounded-md">
+        <div className="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+            <span className="block">Let's have a coffee.</span>
+          </h2>
+          <p className="mt-4 text-lg leading-6 text-blue-200">
+            Send me an email rajko.podinic@gmail.com
+          </p>
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
+            href="#"
+            className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 sm:w-auto"
           >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+            Sign up for free
           </a>
         </div>
-      </main>
+      </div>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="ml-2 h-4" />
-        </a>
-      </footer>
-    </div>
+    </>
   )
 }
